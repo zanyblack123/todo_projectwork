@@ -1,0 +1,152 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: orange;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-wrapper {
+  width: 100%;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.no-data-text {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 45%;
+  z-index: 1;
+  background-color:orange ;
+}
+
+.no-data-text p {
+  color: black;
+  font-size: 2rem;
+  animation: skewtext 1s infinite;
+}
+
+@keyframes skewtext {
+  from {
+    transform: skewY(5deg);
+  }
+
+  to {
+    transform: skewX(5deg);
+  }
+}
+
+.form {
+  display: flex;
+  width: 100%;
+  padding: 1rem;
+  flex-direction: column;
+  align-items: center;
+  background-color: brown;
+}
+
+.form label {
+  margin-bottom: 1rem;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.input-group {
+  width: 80%;
+  min-width: 300px;
+  height: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.input-group input {
+  height: 30%;
+  width: 30vw;
+  min-width: 300px;
+  padding: 1rem;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  font-size: 0.7rem;
+}
+
+.input-group button {
+  height: 3em;
+  width: 15%;
+  min-width: 10em;
+  margin-left: 1rem;
+  border-radius: 20px;
+  border-color: orange;
+  font-size: 0.7rem;
+  background-color: orange;
+  color: #fff;
+}
+
+.list-wrapper {
+  width: 80%;
+  min-width: 300px;
+  height: 17em;
+  padding: 1rem;
+  overflow: auto;
+}
+
+.lists {
+  line-height: 2;
+  height: 100%;
+  list-style: decimal;
+}
+
+.lists div {
+  margin-bottom: 1rem;
+}
+
+.list-icon-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.icon-wrapper-edit {
+  margin-right: 0.3rem;
+  color: #fff;
+}
+
+.lists div li {
+  background-color: brown;
+  padding: 0.2rem;
+  color: #fff;
+  border-radius: 0.3rem;
+  font-size: 0.7rem;
+}
+
+.lists div li::first-letter {
+  text-transform: uppercase;
+}
+
+.lists li::marker {
+  color: brown;
+}
+
+.lists div .list-icon-wrapper span:hover {
+  cursor: pointer;
+}
+
+.lists div .list-icon-wrapper:last-child {
+  color: brown;
+}
